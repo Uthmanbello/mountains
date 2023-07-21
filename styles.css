@@ -7,9 +7,41 @@ body {
   box-sizing: border-box;
 }
 
-header {
+.white {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage {
   background-image: url(images/homepage.png);
-  background-size: cover;
-  width: 100%;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* width: 100vw; */
   height: 100vh;
+  margin-top: -16px;
+  padding-top: 5px;
+}
+
+.navbar-items {
+  justify-content: space-around;
+}
+
+.navbar-links {
+  gap: 2vw;
+  text-decoration: underline;
+  line-height: 1.5rem;
 }
