@@ -40,6 +40,10 @@ ul {
   flex-direction: column;
 }
 
+.d-none {
+  display: none;
+}
+
 /* HOMEPAGE */
 
 .homepage {
@@ -109,10 +113,24 @@ ul {
 
 .mountain-choice {
   background-color: rgb(25, 58, 102);
+  padding: 12px 22vw;
+  gap: 20px;
 }
 
 .mountain1 {
   background: url(images/mountain1.png) no-repeat center center;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  width: 100%;
+  height: 100vh;
+  /* width: 100%;
+  height: 100%; */
+  padding-top: 5px;
+}
+
+.mountain2 {
+  background: url(images/mountain2.png) no-repeat center center;
   background-size: cover;
   /* background-repeat: no-repeat; */
   /* background-position: center; */
