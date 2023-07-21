@@ -113,8 +113,18 @@ ul {
 
 .mountain-choice {
   background-color: rgb(25, 58, 102);
-  padding: 12px 22vw;
+  padding: 0px 22vw;
   gap: 20px;
+}
+
+.mountain-choice p {
+  cursor: pointer;
+}
+
+.clicked {
+  background-color: #888888;
+  color: rgb(25, 58, 102);
+  text-decoration: underline;
 }
 
 .mountain1 {
@@ -143,6 +153,18 @@ ul {
 
 .schedule {
   background-color: #ffffffc9;
+  width: 20vw;
+  margin-left: 25vw;
+  margin-top: 20vh;
+}
+
+td {
+  line-height: 2rem;
+}
+
+tr {
+  display: flex;
+  gap: 20px;
 }
 
 /* FOOTER */
