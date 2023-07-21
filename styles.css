@@ -126,3 +126,30 @@ ul {
 .schedule {
   background-color: #ffffffc9;
 }
+
+/* FOOTER */
+footer {
+  margin-bottom: -20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: rgb(25, 58, 102);
+}
+
+footer ul {
+  align-items: center;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 58, 102, 0.767);
+  z-index: 1;
+}
