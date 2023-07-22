@@ -6,32 +6,33 @@
     <title>Los Angeles Mountains</title>
     <link href="styles.css" rel="stylesheet">
     <script src="scripts/mountains.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,500;0,700;1,100&family=Lato:wght@400;700;900&family=Lobster&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,500;0,700;1,100&family=Lato:wght@300;700;900&family=Lobster&family=Roboto&family=Rubik&display=swap" rel="stylesheet">
   </head>
   <body>
-    <section class="homepage">
+    <section id="homepage" class="homepage">
       <nav class="navbar">
         <ul class="row white navbar-items">
           <li>
-            <a><img src="images/logo.png" alt="logo"></a>
+            <a href="#homepage"><img src="images/logo.png" alt="logo"></a>
           </li>
           <div class="row navbar-links">
             <li>
-              <a class="">01. HISTORY</a>
+              <a href="#history" class="white"><i>01. HISTORY</i></a>
             </li>
             <li>
-              <a>02. TEAM</a>
+              <a href="#team" class="white"><i>02. TEAM</i></a>
             </li>
           </div>
         </ul>
       </nav>
     </section>
 
-    <section class="history">
+    <section id="history" class="history">
       <nav class="navbar-history">
         <ul class="row blue navbar-items">
           <li class="row logo-history">
-            <a><img src="images/logo.png" alt="logo"></a>
+            <a href="#homepage"><img src="images/logo.png" alt="logo"></a>
             <div class="column los-mount">
               <span class="grey">LOSANGELES</span>
               <span class="blue">MOUNTAINS</span>
@@ -39,37 +40,60 @@
           </li>
           <div class="row navbar-links">
             <li>
-              <a class="">01. HISTORY</a>
+              <a href="#history" class="blue"><i>01. HISTORY</i></a>
             </li>
             <li>
-              <a>02. TEAM</a>
+              <a href="#team" class="blue"><i>02. TEAM</i></a>
             </li>
           </div>
         </ul>
       </nav>
-      <div class="history-img">
-        <h2 class="grey">01.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto odio molestiae repellat velit sapiente quam doloribus recusandae, nulla veritatis numquam voluptatum animi minima itaque pariatur ullam ex atque eaque!</p>
+      <div class="history-img column">
+        <div class="row number">
+          <h2 class="light-grey text1">01</h2>
+          <div class="column info">
+            <p class="blue text2">HISTORY</p>
+            <span class="light-grey dot"></span>
+          </div>
+        </div>
+        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto odio molestiae repellat velit sapiente quam doloribus recusandae, nulla veritatis numquam voluptatum animi minima itaque pariatur ullam ex atque eaque!</p>
         <div class="slideshow">
           <img src="images/slideshow1.png" alt="slideshow1">
           <img src="images/slideshow2.png" alt="slideshow2">
         </div>
+
+        <!-- <div class="carousel-container">
+          <div class="slideshow">
+            <img src="images/slideshow1.png" alt="slideshow1">
+            <img src="images/slideshow2.png" alt="slideshow2">
+          </div>
+          <div class="dots-container">
+            <span class="dot1"></span>
+            <span class="dot1"></span>
+          </div>
+        </div> -->
+        
       </div>
     </section>
 
-    <section class="team">
+    <section id="team" class="team">
       <div class="climb">
-        <h3 class="light-grey">02</h3>
-        <p class="blue">CLIMB</p>
-        <span class="light-grey"></span>
+        <div class="row number">
+          <h2 class="light-grey text1">02</h2>
+          <div class="column info">
+            <p class="blue text2">CLIMB</p>
+            <span class="light-grey dot"></span>
+          </div>
+          <p class="desc2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum recusandae cum rerum? Aspernatur consectetur.</p>
+        </div>
       </div>
       <div class="row mountain-choice light-grey">
-        <p id="mountain1" class="clicked">MOUNTAIN 1</p>
-        <p id="mountain2">MOUNTAIN 2</p>
+        <div id="mountain1" class="clicked">MOUNTAIN 1</div>
+        <div id="mountain2">MOUNTAIN 2</div>
       </div>
       <div class="mountain1">
         <div class="schedule">
-          <p class="blue">SCHEDULE</p>
+          <p class="blue text2">SCHEDULE</p>
           <table>
             <tr>
               <td>
@@ -107,10 +131,45 @@
         </div>
       </div>
       <div class="mountain2 d-none">
-        <div class="schedule">
-          hi
+        <div class="mountain2">
+          <div class="schedule">
+            <p class="blue text2">SCHEDULE</p>
+            <table>
+              <tr>
+                <td>
+                  28 Nov 2016
+                </td>
+                <td>
+                  Lorem ipsum dolor.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  30 Nov 2016
+                </td>
+                <td>
+                  Lorem ipsum dolor.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  22 Dec 2016
+                </td>
+                <td>
+                  Lorem ipsum dolor.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  10 Jan 2017
+                </td>
+                <td>
+                  Lorem ipsum dolor.
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
-      </div>
     </section>
 
     <footer>
