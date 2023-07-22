@@ -141,6 +141,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 30vw;
   transition: transform 0.8s ease;
 }
 
@@ -148,12 +149,6 @@ ul {
   position: relative;
   overflow: hidden;
   width: 100%;
-}
-
-.slides {
-  margin-left: 30vw;
-  display: flex;
-  transition: transform 0.8s ease;
 }
 
 .slides img {
@@ -316,10 +311,15 @@ footer ul {
 
   .desc {
     width: 90vw;
-    margin: 0vh 10vw 50vh 6vw;
+    margin: 0vh 10vw 60vh 6vw;
   }
 
-  .slideshow img {
+  .slides {
+    margin-left: 8vw;
+    gap: 20vw;
+  }
+
+  .slides img {
     margin-right: 0px;
     max-width: 30vw;
   }
@@ -347,7 +347,7 @@ footer ul {
 
   .schedule {
     width: 80vw;
-    margin-left: 5vw;
+    margin-left: 10vw;
     margin-top: 15vh;
   }
   
@@ -415,41 +415,3 @@ footer ul {
     flex-direction: column;
   }
 }
-
-
-
-/* .carousel-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
-.slideshow {
-  display: flex;
-  transition: transform 0.8s ease;
-}
-
-img {
-  width: 100%;
-}
-
-.dots-container {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #bbb;
-  cursor: pointer;
-}
-
-.dot.active {
-  background-color: #555;
-} */
