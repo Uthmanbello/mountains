@@ -12,11 +12,16 @@
   <body>
     <section id="homepage" class="homepage">
       <nav class="navbar">
-        <ul class="row white navbar-items">
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="row white navbar-items accordion">
           <li>
-            <a href="#homepage"><img src="images/logo.png" alt="logo"></a>
+            <a href="#homepage" class="logo"><img src="images/logo.png" alt="logo"></a>
           </li>
-          <div class="row navbar-links">
+          <div class="row navbar-links mob-none">
             <li>
               <a href="#history" class="white"><i>01. HISTORY</i></a>
             </li>
@@ -26,10 +31,11 @@
           </div>
         </ul>
       </nav>
+      
     </section>
 
     <section id="history" class="history">
-      <nav class="navbar-history">
+      <nav class="navbar-history mob-none">
         <ul class="row blue navbar-items">
           <li class="row logo-history">
             <a href="#homepage"><img src="images/logo.png" alt="logo"></a>
@@ -174,7 +180,7 @@
 
     <footer>
       <div class="overlay">
-        <ul class="row white navbar-items">
+        <ul class="row white navbar-items footer-items">
           <li class="row logo-history">
             <a><img src="images/logo.png" alt="logo"></a>
             <div class="column los-mount">
@@ -186,5 +192,18 @@
         </ul>
       </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $('.hamburger').on('click', function () {
+        $('.navbar-items').toggleClass('active');
+      });
+
+      $('.navbar-links a').on('click', function () {
+        $('.navbar-items').removeClass('active');
+      });
+    </script>
+
   </body>
 </html>

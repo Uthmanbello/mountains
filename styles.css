@@ -235,6 +235,132 @@ footer ul {
   z-index: 1;
 }
 
+@media (max-width: 1024px) {
+  .mob-none {
+    display: none;
+  }
+
+  .navbar-items {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .history-img {
+    justify-content: flex-end;
+  }
+
+  .history-img .text1 {
+    margin-top: 10vh;
+    margin-bottom: -2vh;
+    margin-left: 0vw;
+  }
+
+  .history-img .info {
+    margin-top: 80px;
+  }
+
+  .desc {
+    width: 90vw;
+    margin: 0vh 10vw 50vh 6vw;
+  }
+
+  .slideshow img {
+    margin-right: 0px;
+    max-width: 30vw;
+  }
+
+  .climb .row {
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .climb .text1 {
+    margin-left: 0vw;
+  }
+  
+  .desc2 {
+    width: 40vw;
+    margin-left: 2vw;
+  }
+
+  .mountain-choice {
+    background-color: rgb(25, 58, 102);
+    padding: 0px 10vw;
+    gap: 15px;
+    font-weight: 700;
+  }
+
+  .schedule {
+    width: 80vw;
+    margin-left: 5vw;
+    margin-top: 15vh;
+  }
+  
+  .footer-items {
+    gap: 20px;
+    margin-left: -10vw;
+  }
+}
+
+/* HAMBURGER BUTTON */
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(25, 58, 102);
+  border-radius: 5px;
+  z-index: 999;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.navbar-items.active .navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+  font-size: 1.5rem;
+  background-color: rgba(25, 58, 102, 0.918);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 102vh;
+  margin-top: -2vh;
+  padding-top: 5vh;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .logo {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  .navbar-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-links {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+}
+
 
 /* 
 .carousel-container {
