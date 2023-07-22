@@ -114,7 +114,7 @@ ul {
   margin-top: -95px;
 }
 
-.dot {
+.dot1 {
   background-color: #62636e;
   width: 18px;
   height: 18px;
@@ -126,15 +126,69 @@ ul {
 }
 
 .slideshow {
+  display: flex;
   background-color: rgba(25, 58, 102, 0.767);
   padding: 10px;
+  transition: transform 0.8s ease;
 }
 
 .slideshow img {
   margin-right: 20px;
+  width: 100%;
+}
+
+.slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.8s ease;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slides {
+  margin-left: 30vw;
+  display: flex;
+  transition: transform 0.8s ease;
+}
+
+.slides img {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.slides img.active {
+  opacity: 1;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #555;
 }
 
 /* TEAM */
+
 .climb {
   background-color: #ffffff;
   padding-top: -20px;
@@ -209,6 +263,7 @@ tr {
 }
 
 /* FOOTER */
+
 footer {
   margin-bottom: -20px;
   padding-top: 2px;
@@ -362,8 +417,8 @@ footer ul {
 }
 
 
-/* 
-.carousel-container {
+
+/* .carousel-container {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -387,7 +442,7 @@ img {
   gap: 10px;
 }
 
-.dot1 {
+.dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -395,6 +450,6 @@ img {
   cursor: pointer;
 }
 
-.dot1.active {
+.dot.active {
   background-color: #555;
 } */
