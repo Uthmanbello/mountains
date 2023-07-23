@@ -392,6 +392,7 @@ footer ul {
   height: 102vh;
   margin-top: -2vh;
   padding-top: 5vh;
+  z-index: 999;
 }
 
 @media screen and (max-width: 768px) {
